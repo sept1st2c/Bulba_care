@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { GlobalStyles } from "./global";
 
 const EmergencyinfoframeChild = styled.div`
   width: 1194px;
@@ -82,6 +83,7 @@ const FramewrapperRoot = styled.div`
 const Framewrapper = () => {
   return (
     <FramewrapperRoot>
+      <GlobalStyles />
       <Emergencyinfoframe>
         <EmergencyinfoframeChild />
         <Caseofemergencytext>

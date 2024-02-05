@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import BaseFrame from "../Components/BaseFrame";
 import Framewrapper from "../Components/FrameWrapper";
+import { GlobalStyles } from "./global";
 
 const PNGEGG = "../../images/pngegg3.png";
 
@@ -50,6 +51,7 @@ const Pngegg = styled.img`
   width: 1216px;
   height: 710px;
   object-fit: cover;
+  opacity: 10%;
 `;
 const Pngegg1 = styled.img`
   position: absolute;
@@ -199,8 +201,8 @@ const Maphacksframes1 = styled.section`
 `;
 const Userinterfacerectangle = styled.div`
   position: absolute;
-  top: 320px;
-  left: 87px;
+  top: 345px;
+  left: 46px;
   border-radius: var(--br-13xl);
   background-color: #59b4c3;
   box-shadow: 5px 4px 11.8px rgba(0, 0, 0, 0.25);
@@ -528,6 +530,7 @@ const DesktopRoot = styled.div`
 const Desktop = () => {
   return (
     <DesktopRoot>
+      <GlobalStyles />
       <Desktop1Child />
       <Desktop1Item />
       <WrapperBertholdBlock1Rem>

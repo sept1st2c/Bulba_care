@@ -112,7 +112,7 @@ const ClockRectangleWrapper = styled.div`
 const RectangleContainerChild = styled.div`
   height: 103px;
   width: 1497px;
-  position: relative;
+  position: absolute;
   background-color: var(--color-midnightblue);
   display: none;
   max-width: 100%;
@@ -132,7 +132,7 @@ const Uploadbutton = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 0px var(--padding-smi) 0px 0px;
+  padding: 0px 0px 0px;
 `;
 const Register = styled.div`
   height: 29px;
@@ -226,7 +226,7 @@ const RegisterandUpload = styled.div`
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 0px var(--padding-4xs);
+  padding: 0px 0px;
   box-sizing: border-box;
   max-width: 100%;
 `;
@@ -430,7 +430,7 @@ const BaseFrameRoot = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding: 0px 0px 0px 0px;
   box-sizing: border-box;
   min-height: 669px;
