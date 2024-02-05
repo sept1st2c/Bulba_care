@@ -2,6 +2,8 @@ import styled from "styled-components";
 import BaseFrame from "../Components/BaseFrame";
 import Framewrapper from "../Components/FrameWrapper";
 
+const PNGEGG = "../../images/pngegg3.png";
+
 const Desktop1Child = styled.div`
   align-self: stretch;
   height: 861px;
@@ -538,16 +540,16 @@ const Desktop = () => {
       <BaseFrame />
       <Framewrapper />
       <Emergencyframe1>
-        <Pngegg alt="" src="../../images/pngegg_3.png" />
+        <Pngegg loading="eager" alt="" src="../../images/pngegg3.png" />
         <Registerandupload1>
-          <Pngegg1 alt="" src="../../images/pngegg (4).png" />
+          <Pngegg1 alt="" src="../../images/pngegg4.png" />
           <Topmapstipsrectangle />
           <Registerframe1>
             <RegisterframeChild />
             <Register>REGISTER</Register>
           </Registerframe1>
           <WrapperPngegg>
-            <Pngegg2 loading="eager" alt="" src="/pngegg-6-6@2x.png" />
+            <Pngegg2 loading="eager" alt="" src="../../images/pngegg6.png" />
           </WrapperPngegg>
         </Registerandupload1>
         <Emergencyinforectangle1 />
@@ -556,37 +558,37 @@ const Desktop = () => {
           <Top20GoogleMapsHacksTips1 />
           <Top20GoogleMapsHacksTips2
             alt=""
-            src="/top-20-google-maps-hacks-tips-and-tricks-1@2x.png"
+            src="../../images/googlemaps.jpeg"
           />
         </Maphacksframes1>
         <Userinterfacerectangle />
         <Hospitalbackgroundrectangle />
         <WrapperPngegg1>
-          <Pngegg3 loading="eager" alt="" src="/pngegg-6-1@2x.png" />
+          <Pngegg3 loading="eager" alt="" src="../../images/pngegg6.png" />
         </WrapperPngegg1>
         <WrapperPngegg2>
-          <Pngegg4 loading="eager" alt="" src="/pngegg-6-9@2x.png" />
+          <Pngegg4 loading="eager" alt="" src="../../images/pngegg6.png" />
         </WrapperPngegg2>
         <WrapperPngegg3>
-          <Pngegg5 loading="eager" alt="" src="/pngegg-6-3@2x.png" />
+          <Pngegg5 loading="eager" alt="" src="../../images/pngegg6.png" />
         </WrapperPngegg3>
         <WrapperPngegg4>
-          <Pngegg4 loading="eager" alt="" src="/pngegg-6-4@2x.png" />
+          <Pngegg4 loading="eager" alt="" src="../../images/pngegg6.png" />
         </WrapperPngegg4>
         <WrapperPngegg5>
-          <Pngegg2 loading="eager" alt="" src="/pngegg-6-5@2x.png" />
+          <Pngegg2 loading="eager" alt="" src="../../images/pngegg6.png" />
         </WrapperPngegg5>
         <Registrationanduploadframe>
           <Pngegg6 alt="" src="/pngegg-5-1@2x.png" />
           <WrapperPngegg6>
-            <Pngegg2 loading="eager" alt="" src="/pngegg-6-7@2x.png" />
+            <Pngegg2 loading="eager" alt="" src="../../images/pngegg6.png" />
           </WrapperPngegg6>
           <WrapperPngegg7>
-            <Pngegg3 loading="eager" alt="" src="/pngegg-6-8@2x.png" />
+            <Pngegg3 loading="eager" alt="" src="../../images/pngegg6.png" />
           </WrapperPngegg7>
         </Registrationanduploadframe>
         <WrapperPngegg8>
-          <Pngegg7 alt="" src="/pngegg-6-2@2x.png" />
+          <Pngegg7 alt="" src="../../images/pngegg6.png" />
         </WrapperPngegg8>
       </Emergencyframe1>
       <Aboutusframe>

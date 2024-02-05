@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { GlobalStyles } from "./global";
 
 const Clock1Icon = styled.img`
   height: 29px;
@@ -32,7 +33,7 @@ const AboutUsText = styled.div`
   align-items: center;
   justify-content: flex-start;
   gap: var(--gap-2xs);
-  color: var(--color-red);
+  color: #ff0000;
 `;
 const EmergencyFrame = styled.div`
   align-self: stretch;
@@ -443,6 +444,7 @@ const BaseFrameRoot = styled.div`
 const BaseFrame = () => {
   return (
     <BaseFrameRoot>
+      <GlobalStyles />
       <BertholdBlockWrapper>
         <BertholdBlock>
           <FrameParent>
