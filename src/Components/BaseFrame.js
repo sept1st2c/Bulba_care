@@ -142,7 +142,7 @@ const Uploadbutton = styled.div`
   justify-content: flex-start;
   padding: 0px 0px 0px;
 `;
-const Register = styled.div`
+const Register = styled.button`
   margin: 0;
   padding: 0;
   border: none;
@@ -160,7 +160,14 @@ const Register = styled.div`
     font-size: var(--font-size-lgi);
   }
 `;
-const UploadXRay = styled.div`
+const UploadXRay = styled.button`
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
   height: 29px;
   position: relative;
   font-weight: 500;
@@ -458,10 +465,10 @@ const BaseFrameRoot = styled.div`
   font-family: var(--font-montserrat);
 `;
 
-const BaseFrame = ({ ScrollPosition }) => {
+const BaseFrame = () => {
   const scrollRef = useRef();
 
-  const handleClick = () => {
+  const handleClick = (ScrollPosition) => {
     // Scroll to a certain position on the page
     window.scrollTo({
       top: ScrollPosition, // Adjust this value based on where you want to scroll
@@ -511,18 +518,28 @@ const BaseFrame = ({ ScrollPosition }) => {
                     <Registerframe>
                       <Uploadbutton>
                         <Emergency
-                          onClick={() => handleClick(50)}
+                          onClick={() => handleClick(170)}
                           ref={scrollRef}
                         >
                           EMERGENCY
                         </Emergency>
                       </Uploadbutton>
-                      <Register>REGISTER</Register>
+                      <Register
+                        onClick={() => handleClick(1370)}
+                        ref={scrollRef}
+                      >
+                        REGISTER
+                      </Register>
                       <UploadXRay>UPLOAD PHOTOS</UploadXRay>
                     </Registerframe>
                   </Emergencyframe>
                   <Aboutusframe>
-                    <Emergency>PROFILE</Emergency>
+                    <Emergency
+                      onClick={() => handleClick(2370)}
+                      ref={scrollRef}
+                    >
+                      PROFILE
+                    </Emergency>
                     <User1Icon
                       loading="eager"
                       alt=""
