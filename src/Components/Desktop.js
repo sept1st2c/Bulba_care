@@ -7,20 +7,25 @@ const PNGEGG = "../../images/pngegg3.png";
 
 const Desktop1Child = styled.div`
   align-self: stretch;
+  width: 1555px;
   height: 861px;
-  position: relative;
+  top: 1346px;
+  object-fit: contain;
+  position: absolute;
   background: linear-gradient(180deg, #211c6a, #59b4c3);
-  display: none;
-  z-index: 0;
+  // display: none;
+  z-index: 2;
 `;
 const Desktop1Item = styled.div`
   width: 1555px;
   height: 646px;
-  position: relative;
+  top: 700px;
+  //  position: relative;
   background: linear-gradient(180deg, rgba(116, 226, 145, 0), #74e291);
-  display: none;
+  object-fit: contain;
+  position: absolute;
   max-width: 100%;
-  z-index: 3;
+  z-index: 2;
 `;
 const BertholdBlock1RemovebgPrIcon = styled.img`
   width: 100%;
@@ -39,7 +44,7 @@ const WrapperBertholdBlock1Rem = styled.div`
   margin: 0 !important;
   top: 1px;
   left: -77px;
-  z-index: 2;
+  z-index: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,7 +65,8 @@ const Pngegg1 = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: none;
+  //  display: none;
+  opacity: 20%;
 `;
 const Topmapstipsrectangle = styled.div`
   position: absolute;
@@ -149,11 +155,12 @@ const Registerandupload1 = styled.section`
   z-index: 2;
 `;
 const Emergencyinforectangle1 = styled.section`
+  align-self: stretch;
   position: absolute;
   top: 693px;
-  left: 4px;
+  left: -83px;
   background-color: var(--color-khaki-100);
-  width: 1491px;
+  width: 1691px;
   height: 249px;
   z-index: 1;
 `;
@@ -312,7 +319,9 @@ const Pngegg6 = styled.img`
   width: 100%;
   height: 100%;
   object-fit: contain;
-  display: none;
+  //display: none;
+  opacity: 20%;
+  scale: 60%;
 `;
 const WrapperPngegg6 = styled.div`
   position: absolute;
@@ -582,7 +591,7 @@ const Desktop = () => {
           <Pngegg2 loading="eager" alt="" src="../../images/pngegg6.png" />
         </WrapperPngegg5>
         <Registrationanduploadframe>
-          <Pngegg6 alt="" src="/pngegg-5-1@2x.png" />
+          <Pngegg6 loading="eager" alt="" src="../../images/pngegg5.png" />
           <WrapperPngegg6>
             <Pngegg2 loading="eager" alt="" src="../../images/pngegg6.png" />
           </WrapperPngegg6>
@@ -599,7 +608,7 @@ const Desktop = () => {
           <Emergencyhelpframe>
             <EmergencyhelpframeChild />
             <AnalyzeXRaysContainer>
-              <AnalyzeXRays>{`Analyze x rays report and `}</AnalyzeXRays>
+              <AnalyzeXRays>{`Analyze your injury's photos and `}</AnalyzeXRays>
               <AnalyzeXRays>{`will show you your broken bones condition instantly while `}</AnalyzeXRays>
               <AnalyzeXRays>you wait for the actual reports</AnalyzeXRays>
             </AnalyzeXRaysContainer>

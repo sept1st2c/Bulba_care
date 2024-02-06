@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { GlobalStyles } from "./global";
+import { useRef } from "react";
 
 const Clock1Icon = styled.img`
   height: 29px;
@@ -117,7 +118,14 @@ const RectangleContainerChild = styled.div`
   display: none;
   max-width: 100%;
 `;
-const Emergency = styled.div`
+const Emergency = styled.button`
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
   height: 29px;
   position: relative;
   font-weight: 500;
@@ -135,6 +143,13 @@ const Uploadbutton = styled.div`
   padding: 0px 0px 0px;
 `;
 const Register = styled.div`
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
   height: 29px;
   position: relative;
   font-weight: 500;
@@ -359,6 +374,8 @@ const Pngplaceholderframe1 = styled.button`
   z-index: 2;
   &:hover {
     background-color: var(--color-khaki-200);
+    scale: 95%;
+    transition: 0.3s ease-in-out;
   }
 `;
 const Workflowoptimization = styled.div`
@@ -441,7 +458,17 @@ const BaseFrameRoot = styled.div`
   font-family: var(--font-montserrat);
 `;
 
-const BaseFrame = () => {
+const BaseFrame = ({ ScrollPosition }) => {
+  const scrollRef = useRef();
+
+  const handleClick = () => {
+    // Scroll to a certain position on the page
+    window.scrollTo({
+      top: ScrollPosition, // Adjust this value based on where you want to scroll
+      behavior: "smooth", // Add smooth scrolling effect
+    });
+  };
+
   return (
     <BaseFrameRoot>
       <GlobalStyles />
@@ -483,10 +510,15 @@ const BaseFrame = () => {
                   <Emergencyframe>
                     <Registerframe>
                       <Uploadbutton>
-                        <Emergency>EMERGENCY</Emergency>
+                        <Emergency
+                          onClick={() => handleClick(50)}
+                          ref={scrollRef}
+                        >
+                          EMERGENCY
+                        </Emergency>
                       </Uploadbutton>
                       <Register>REGISTER</Register>
-                      <UploadXRay>UPLOAD X RAY</UploadXRay>
+                      <UploadXRay>UPLOAD PHOTOS</UploadXRay>
                     </Registerframe>
                   </Emergencyframe>
                   <Aboutusframe>
